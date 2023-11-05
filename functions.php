@@ -120,10 +120,6 @@ add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 define ('HOME_PAGE_ID', get_option('page_on_front'));
 define ('BLOG_ID', get_option('page_for_posts'));
 define ('POSTS_PER_PAGE', get_option('posts_per_page'));
-/*define ('SHOP_ID', get_option('woocommerce_shop_page_id'));
-define ('ACCOUNT_ID', get_option('woocommerce_myaccount_page_id'));
-define ('CART_ID', get_option('woocommerce_cart_page_id'));
-define ('CHECKOUT_ID', get_option('woocommerce_checkout_page_id'));*/
 /* END: Theme config section*/
 
 //New Body Classes
@@ -145,7 +141,6 @@ function new_body_classes( $classes ){
                 $v == 'page-template' ||
                 $v == 'page-id-'.$post->ID ||
                 $v == 'page-template-default' ||
-                $v == 'woocommerce-page' ||
                 ($temp != null?($v == 'page-template-'.$tn.'-php' || $v == 'page-template-'.$tn):'')) unset($classes[$k]);
         }
     }
@@ -236,8 +231,6 @@ function seo_title(){
         } elseif((is_single() || is_page()) && $post->post_parent) {
             $parent_title = get_the_title($post->post_parent);
             echo wp_title('-', true, 'right') . $parent_title.' - ';
-        } elseif(class_exists('Woocommerce') && is_shop()) {
-            echo get_the_title(SHOP_ID) . ' - ';
         } else {
             wp_title('-', true, 'right');
         }
@@ -330,12 +323,3 @@ function some() {
     return $soc;
 }
 add_shortcode("social", "some");
-
-/*add_theme_support("woocommerce");
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-// Remove the sorting dropdown from Woocommerce
-remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
-// Remove the result count from WooCommerce
-remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );*/
