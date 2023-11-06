@@ -14,9 +14,11 @@ if( @!WP_DEBUG) { ob_start('ob_html_compress'); }
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#1c2c39">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" media="print" onload="this.media='all'"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'"/>
+
     <?php wp_head(); ?>
 </head>
 

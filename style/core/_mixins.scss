@@ -1,3 +1,127 @@
+//MIXINS
+@mixin box-shadow($styles) {
+  -webkit-box-shadow: $styles;
+  -moz-box-shadow: $styles;
+  -ms-box-shadow: $styles;
+  -o-box-shadow: $styles;
+  box-shadow: $styles;
+}
+
+@mixin transition($property: all, $duration: .4s, $easing: ease) {
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -ms-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  transition: $property $duration $easing;
+}
+
+@mixin transform($action, $backface: false) {
+  @if $backface {
+    -webkit-transform: $action;
+    -moz-transform: $action;
+    -ms-transform: $action;
+    -o-transform: $action;
+    transform: $action;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  } @else {
+    -webkit-transform: $action;
+    -moz-transform: $action;
+    -ms-transform: $action;
+    -o-transform: $action;
+    transform: $action;
+  }
+}
+
+@mixin user-select($select) {
+  -webkit-touch-callout: $select;
+  -webkit-user-select: $select;
+  -khtml-user-select: $select;
+  -moz-user-select: $select;
+  -ms-user-select: $select;
+  user-select: $select;
+}
+
+@mixin backface-visibility($back: hidden) {
+  -webkit-backface-visibility: $back;
+  -moz-backface-visibility: $back;
+  backface-visibility: $back;
+}
+
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  } @else if ($horizontal) {
+    left: 50%;
+    @include transform(translate(-50%, 0));
+  } @else if ($vertical) {
+    top: 50%;
+    @include transform(translate(0, -50%));
+  }
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($delay, $duration, $animation) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $animation;
+  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  $base: $fb;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+@mixin hover {
+  &:active {
+    @content
+  }
+  @include rwd-min(1025) {
+    &:hover {
+      @content
+    }
+  }
+}
+
 // Flexbox Mixins
 // http://philipwalton.github.io/solved-by-flexbox/
 // https://github.com/philipwalton/solved-by-flexbox
@@ -220,7 +344,7 @@
 
 // Flexbox "Flex" (shorthand)
 //
-// The 'flex' property specifies the components of a flexible length: the
+// The 'flex' property specifies the core of a flexible length: the
 // flex grow factor and flex shrink factor, and the flex basis. When an
 // element is a flex item, 'flex' is consulted instead of the main size
 // property to determine the main size of the element. If an element is
@@ -359,6 +483,21 @@
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
 }
+
+@mixin columns($count: 2, $gap: 0) {
+  -webkit-column-count: $count;
+  -moz-column-count: $count;
+  column-count: $count;
+  -webkit-column-gap: $gap;
+  -moz-column-gap: $gap;
+  column-gap: $gap;
+  > * {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+  }
+}
+
 @mixin boxGrid($columnNumber, $spacingPercent) {
   $contentPercent: 100%;
   $sideMargin: ($spacingPercent/2);
@@ -372,5 +511,26 @@
   > * {
     width: ($contentPercent/$columnNumber) - $spacingPercent;
     margin: 0 #{$sideMargin} ($marginInt + ($marginInt / $columnNumber) * 1em)
+  }
+}
+
+
+@mixin rwd-max($px) {
+  $min-width: $px#{px};
+  @media screen and (max-width: $min-width) {
+    @content
+  }
+}
+@mixin rwd-min($px) {
+  $min-width: $px#{px};
+  @media screen and (min-width: $min-width) {
+    @content
+  }
+}
+@mixin rwd-range($px, $px2) {
+  $max-width: $px#{px};
+  $min-width: $px2#{px};
+  @media screen and (max-width: $max-width) and (min-width: $min-width) {
+    @content
   }
 }
