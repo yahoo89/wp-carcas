@@ -1,4 +1,4 @@
-<form action="<?php echo site_url('/'); ?>" class="searchform" id="searchform" method="get">
-    <input type="text" placeholder="Search ..." id="s" name="s" value="">
-    <button type="submit" value="Search" id="searchsubmit" class="icon-search"></button>
+<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Search" name="s" id="s" aria-label="Search"/>
+    <button type="submit" class="icon_search" aria-label="Search"></button>
 </form>
