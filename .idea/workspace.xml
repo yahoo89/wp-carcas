@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a937e5da-6456-4302-8d89-32e164ca6a87" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/wpadmin/admin-addons.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/wpadmin/admin-area.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/wpadmin/admin-area.css" beforeDir="false" afterPath="$PROJECT_DIR$/include/wpadmin/admin-area.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/_jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/libs/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/libs/fancy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/libs/selectric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/libs/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/libs/_selectric.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/libs/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/libs/fancy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/libs/swiper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/logic.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,15 +24,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/wpadmin/admin-area.php">
+        <entry file="file://$PROJECT_DIR$/js/libs/aos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="18">
+              <caret line="1" column="13799" selection-start-line="1" selection-start-column="13799" selection-end-line="1" selection-end-column="13799" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -42,7 +59,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style/style.scss" />
-        <option value="$PROJECT_DIR$/js/logic.js" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp34651/wp-content/themes/divi-child/functions.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp34298/wp-config.php" />
@@ -55,6 +71,17 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/include/wpadmin/admin-area.css" />
         <option value="$PROJECT_DIR$/include/wpadmin/admin-area.php" />
+        <option value="$PROJECT_DIR$/js/logic.js" />
+        <option value="$PROJECT_DIR$/js/_jquery.js" />
+        <option value="$PROJECT_DIR$/js/ajax.js" />
+        <option value="$PROJECT_DIR$/style/libs/swiper.css" />
+        <option value="$PROJECT_DIR$/js/libs/swiper.js" />
+        <option value="$PROJECT_DIR$/style/libs/fancy.css" />
+        <option value="$PROJECT_DIR$/js/libs/fancy.js" />
+        <option value="$PROJECT_DIR$/js/libs/selectric.js" />
+        <option value="$PROJECT_DIR$/style/libs/_selectric.scss" />
+        <option value="$PROJECT_DIR$/style/libs/aos.css" />
+        <option value="$PROJECT_DIR$/js/libs/aos.js" />
       </list>
     </option>
   </component>
@@ -83,19 +110,24 @@
             <path>
               <item name="wp-carcas" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-carcas" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-carcas" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-carcas" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp-carcas" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp-carcas" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="wpadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wp-carcas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wp-carcas" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,6 +138,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/theme2023" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -132,12 +165,12 @@
       <option name="presentableId" value="Default" />
       <updated>1686938258568</updated>
       <workItem from="1686938259884" duration="1196000" />
-      <workItem from="1699177407222" duration="4832000" />
+      <workItem from="1699177407222" duration="7614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6028000" />
+    <option name="totallyTimeSpent" value="8810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -156,7 +189,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28470254" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1388102" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -183,26 +216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="86" column="2" lean-forward="true" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28340">
-          <folding>
-            <element signature="e#317#323#0" expanded="true" />
-            <element signature="e#324#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/outer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#7907#8230#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -281,23 +294,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/wpadmin/01.jpg">
+    <entry file="file://$PROJECT_DIR$/include/admin-area/01.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/wpadmin/wordpress-logo.svg">
+    <entry file="file://$PROJECT_DIR$/include/admin-area/wordpress-logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/wpadmin/admin-area.css">
+    <entry file="file://$PROJECT_DIR$/include/admin-area/admin-area.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
           <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/wpadmin/admin-area.php">
+    <entry file="file://$PROJECT_DIR$/include/admin-area/admin-area.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/installer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#477#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/TGM-Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/plugins/init.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/_jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+          <caret line="102" column="3" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2106" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/outer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#7907#8230#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/libs/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#297#2529#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/swiper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/libs/fancy.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24662" selection-start-column="24662" selection-end-column="24662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/fancy.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/selectric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="14440" selection-start-line="1" selection-start-column="14440" selection-end-line="1" selection-end-column="14440" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/libs/_selectric.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="201" column="28" lean-forward="true" selection-start-line="201" selection-start-column="28" selection-end-line="201" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/libs/aos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="28725" selection-start-line="1" selection-start-column="28725" selection-end-line="1" selection-end-column="28725" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/aos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="13799" selection-start-line="1" selection-start-column="13799" selection-end-line="1" selection-end-column="13799" />
         </state>
       </provider>
     </entry>
