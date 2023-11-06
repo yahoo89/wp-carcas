@@ -9,6 +9,9 @@ body, html {
 body {
     background: url(01.jpg) 50% 50% / cover no-repeat;
 }
+#login {
+    text-align: center;
+}
 .login form {
     color: #fff;
     background: rgba(52, 152, 219, .75);
@@ -16,6 +19,9 @@ body {
     -webkit-box-shadow: 0 2px 0 rgba(35, 110, 161, .75);
     -moz-box-shadow: 0 2px 0 rgba(35, 110, 161, .75);
     box-shadow: 0 2px 0 rgba(35, 110, 161, .75);
+}
+#loginform {
+    text-align: left;
 }
 .login h1 a {
     background-image: url(wordpress-logo.svg);
@@ -28,7 +34,6 @@ body {
     -webkit-box-shadow: 0 9px 18px rgba(69, 34, 75, 0);
     -moz-box-shadow: 0 9px 18px rgba(69, 34, 75, 0);
     box-shadow: 0 9px 18px rgba(69, 34, 75, 0);
-    color: #fff !important;
     display: inline-block;
     font: 300 13px/20px "Open Sans","Arial",sans-serif;
     vertical-align: top;
@@ -58,6 +63,12 @@ body {
     width: 160px;
     height: auto !important;
     margin: 20px auto 0;
+}
+.login .button.wp-hide-pw {
+    padding: 0;
+}
+.login .button.wp-hide-pw .dashicons {
+    top: 9px;
 }
 .login .button:hover {opacity: .75}
 .login form .forgetmenot {
